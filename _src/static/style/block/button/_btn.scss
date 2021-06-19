@@ -1,2 +1,68 @@
 .btn {
+  position: relative;
+
+  display: inline-block;
+  min-width: rem(244);
+  padding: rem(20) 0;
+  overflow: hidden;
+
+  font-weight: 700;
+  text-align: center;
+  color: $c-white;
+
+  border-radius: rem(5);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: rem(-165);
+    left: rem(-40);
+
+    display: block;
+    width: rem(30);
+    height: rem(400);
+
+    background: #fff;
+    transform: rotate(45deg);
+
+    animation: 5s linear infinite normal slidein;
+  }
+
+  &--orange {
+    font-weight: 700;
+    font-size: rem(17);
+    line-height: 1.4;
+    text-align: left;
+    color: $c-white;
+    letter-spacing: rem(.4);
+
+    background: linear-gradient(#fe744f, #fe504f);
+    border-radius: rem(5);
+    box-shadow: inset 0 rem(-4) 0 0 $c-red-dark;
+
+    transition: .3s;
+
+
+    &:hover {
+      color: $c-white;
+      text-decoration: none;
+
+      box-shadow: inset 0 rem(5) 0 $c-red-dark,
+      0 rem(20) rem(50) $c-pink;
+    }
+  }
+}
+
+@keyframes slidein {
+  0% {
+    left: rem(-40);
+  }
+
+  10% {
+    left: calc(100% + rem(140));
+  }
+
+  100% {
+    left: calc(100% + rem(140));
+  }
 }

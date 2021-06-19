@@ -1,21 +1,33 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "Uni Neue", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: rem(18);
 
 // //////////////////////////////////////// colors 
-$c-main: #000;
-$c-secondary: gray;
+$c-main: #282728;
+$c-secondary: #313d4b;
+$c-white: #fff;
 $c-accent: orange;
+$c-purple: #7460f3;
+$c-blue: #00a2f2;
+$c-green: #25d266;
+$c-blue-light: #6b97fb;
+$c-red: #fe5a53;
+$c-red-dark: #e63c3c;
+$c-grey: #596f89;
+$c-grey-light: rgba(49, 61, 75, .3);
+$c-pink: rgba(232, 68, 68, .6);
+$c-grey-dark: #323232;
+
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
 $xl: 1199.98px;
-$lg: 991.98px;
+$lg: 992px;
 $md: 767.98px;
-$sm: 575.98px;
-$xs: 425.98px;
+$sm: 678px;
+$xs: 575.98px;
 $ss: 359.98px;
 
 // //////////////////////////////////////// grid

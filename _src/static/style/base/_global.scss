@@ -1,13 +1,22 @@
+html {
+  font-size: 1vw;
+  line-height: 1.15;
+
+  @media (max-width: $lg) {
+    font-size: 16px;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 
   font-size: $fz-main;
   font-family: $ff-main;
   color: $c-main;
-  // overflow-x: hidden;
 }
 
 .main {
@@ -25,4 +34,12 @@ img {
   box-shadow: 0 0 100px #fff inset;
 
   -webkit-text-fill-color: currentColor;
+}
+
+.heavy {
+  font-weight: 900;
+}
+
+b {
+  font-weight: 700;
 }

@@ -1,0 +1,267 @@
+.primary {
+  min-height: 100vh;
+  padding-top: rem(290);
+  padding-bottom: rem(115);
+
+  background: url("../img/background/bc-primary.jpg") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    padding-top: rem(200);
+
+    background-position: center;
+  }
+
+  @media (max-width: $md) {
+    padding-top: rem(290);
+  }
+}
+
+.primary__title {
+  margin-bottom: 0;
+  padding-bottom: rem(72);
+
+  font-weight: 100;
+  font-size: rem(60);
+  line-height: 1.13;
+  font-family: $ff-main;
+  letter-spacing: rem(-.4);
+
+  @media (max-width: $md) {
+    font-size: rem(45);
+    text-align: center;
+  }
+}
+
+.primary__title-br-1 {
+  display: block;
+
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+
+.primary__title-br-2 {
+  display: none;
+
+  @media (max-width: $md) {
+    display: block;
+  }
+}
+
+.primary__title-br-3 {
+  display: block;
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+
+.primary__list {
+  display: flex;
+  margin-bottom: rem(57);
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.primary__item {
+  position: relative;
+
+  padding-left: rem(20);
+
+  font-weight: 100;
+  font-size: rem(20);
+  line-height: 1.2;
+
+  @media (max-width: $sm) {
+    margin-right: 0;
+    padding-bottom: rem(40);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: rem(-10);
+
+    display: block;
+    width: rem(25);
+    height: rem(6);
+
+    background-color: $c-red;
+    transform: rotate(-45deg);
+  }
+
+  &:first-child {
+    position: relative;
+
+    padding-left: rem(105);
+
+    @media (max-width: $sm) {
+      padding-top: rem(30);
+    }
+
+    &::after {
+      content: "15";
+      position: absolute;
+      top: rem(-10);
+      left: rem(25);
+
+      display: block;
+
+      font-weight: 900;
+      font-size: rem(72);
+      font-family: $ff-main;
+      color: $c-main;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.primary__item br {
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.primary__wrap-img {
+  display: none;
+
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(30);
+  }
+}
+
+.primary__footer {
+  display: flex;
+  align-items: flex-end;
+
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.primary__cost {
+  margin-right: rem(70);
+
+  @media (max-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: rem(50);
+  }
+}
+
+.primary__sale {
+  padding-bottom: rem(5);
+  padding-left: rem(20);
+
+  letter-spacing: rem(-.5);
+
+  @media (max-width: $lg) {
+    padding-left: 0;
+
+    font-size: rem(25);
+    line-height: 1.5;
+  }
+
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.primary__sale br {
+  display: block;
+  &:nth-child(2) {
+    display: none;
+  }
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+
+  @media (max-width: $lg) {
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.primary__sale-accent {
+  padding: 0 rem(5) rem(5) rem(10);
+
+  font-weight: 700;
+  letter-spacing: rem(-.7);
+
+  background-color: $c-white;
+  border-radius: rem(5);
+}
+
+.primary__btn {
+  position: relative;
+
+  display: inline-block;
+  min-width: rem(425);
+  padding: rem(28) rem(10) rem(28) rem(100);
+
+  text-transform: uppercase;
+
+
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    max-width: rem(680);
+  }
+
+  @media (max-width: $md) {
+    min-width: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: rem(45);
+
+    display: block;
+    width: rem(38);
+    height: rem(38);
+
+    background: url("../img/icon/calculator.png") no-repeat;
+    background-size: 100%;
+    transform: translate(0, -50%);
+  }
+}
+
+.primary__btn br {
+  display: block;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.primary__sertificate {
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.primary__sertificate-title {
+  margin-bottom: rem(20);
+}
+
+.primary__sertificate-slider {
+}

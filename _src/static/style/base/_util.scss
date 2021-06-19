@@ -14,3 +14,11 @@
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+@function rem($pixels) {
+  @return #{$pixels/19.13}rem;
+}
+
+@function vw($pixels) {
+  @return #{$pixels/19.13}rem;
+}

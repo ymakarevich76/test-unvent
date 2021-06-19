@@ -1,0 +1,107 @@
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+
+.social__link {
+  position: relative;
+
+  display: block;
+  width: rem(49);
+  height: rem(49);
+  margin-right: rem(10);
+
+  border-radius: 50%;
+
+  transition: .3s;
+
+  @media (max-width: 420px) {
+    width: rem(30);
+    height: rem(30);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:nth-child(1) {
+    background-color: $c-purple;
+
+    &:after {
+      width: rem(18);
+      height: rem(21);
+
+      background: url("../img/social/viber.png") no-repeat;
+      background-size: 100%;
+
+      @media (max-width: 420px) {
+        width: rem(14);
+        height: rem(17);
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: $c-blue;
+
+    &:after {
+      width: rem(19);
+      height: rem(16);
+
+      background: url("../img/social/telegram.png") no-repeat;
+      background-size: 100%;
+
+      @media (max-width: 420px) {
+        width: rem(15);
+        height: rem(12);
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: $c-green;
+
+    &:after {
+      width: rem(20);
+      height: rem(20);
+
+      background: url("../img/social/whatsapp.png") no-repeat;
+      background-size: 100%;
+
+      @media (max-width: 420px) {
+        width: rem(16);
+        height: rem(16);
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    order: -1;
+
+    &:after {
+      width: rem(49);
+      height: rem(49);
+
+      background: url("../img/social/tel.png") no-repeat;
+      background-size: 100%;
+
+      @media (max-width: 420px) {
+        width: rem(30);
+        height: rem(30);
+      }
+    }
+  }
+}

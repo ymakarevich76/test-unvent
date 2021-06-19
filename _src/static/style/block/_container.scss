@@ -2,13 +2,14 @@
   position: relative;
 
   width: 100%;
-  max-width: 1300px;
+  max-width: rem(1630);
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: rem(30);
+  padding-left: rem(30);
 
   @media (max-width: $lg) {
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 100%;
+    padding-right: rem(15);
+    padding-left: rem(15);
   }
 }

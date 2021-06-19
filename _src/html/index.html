@@ -3,12 +3,140 @@
 
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
-  <section class="section">
+  <section class="primary">
     <div class="container">
-      <p>content</p>
-    </div><!--/container-->
+      <h1 class="primary__title title-1"><b class="heavy">Монтаж дымоходов из<br class="primary__title-br-1">
+          нержавеющей стали</b><br class="primary__title-br-2"> для<br class="primary__title-br-3"> частных
+        домов
+        и предприятий</h1>
+
+      <div class="primary__list">
+        <div class="primary__item">
+          <b>лет устанавливаем<br>
+            дымоходы</b> для частных<br>
+          лиц и организаций
+        </div>
+        <div class="primary__item">
+          <b>Бесплатный выезд<br>
+            инженера</b> в пределах<br>
+          30 км. от Киева
+        </div>
+        <div class="primary__item">
+          <b>Монтаж под ключ от<br>
+            1 дня,</b> в наличии все<br>
+          разрешительные<br>
+          документы
+        </div>
+
+      </div>
+
+      <div class="primary__wrap-img">
+        <img src="static/img/background/man.png" width="599" height="753" alt="Мужчина">
+      </div>
+
+      <div class="primary__footer">
+        <div class="primary__cost">
+          <p class="primary__sale">
+            Рассчитайте стоимость монтажа вашего<br>
+            дымохода за 1 минуту и<br> <span class="primary__sale-accent">получите скидку 15%</span>
+          </p>
+
+          <a href="#" class="primary__btn btn btn--orange">
+            Рассчитать стоимость<br>
+            монтажа и получить скидку
+          </a>
+        </div>
+        <!--/primary__cost-->
+
+        <div class="primary__serificate">
+          <h2 class="primary__serificate-title title-2">
+            Лицензии и сертификаты в наличии
+          </h2>
+
+          <div class="primary__sertificate-slider slider-sertificate">
+            <div class="slider-sertificate__container swiper-container">
+              <div class="slider-sertificate__wrapper swiper-wrapper">
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-1.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/1.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-1.jpg">
+
+                      <img src="static/img/sertificate/sert-1-mob.jpg" alt="Сертификат-1">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-2.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/2.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-2.jpg">
+
+                      <img src="static/img/sertificate/sert-2-mob.jpg" alt="Сертификат-2">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/3.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-3.jpg">
+
+                      <img src="static/img/sertificate/sert-3-mob.jpg" alt="Сертификат-3">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/3.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-3.jpg">
+
+                      <img src="static/img/sertificate/sert-3-mob.jpg" alt="Сертификат-3">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/2.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-2.jpg">
+
+                      <img src="static/img/sertificate/sert-2-mob.jpg" alt="Сертификат-2">
+                    </picture>
+                  </a>
+                </div>
+
+              </div>
+              <!--/swiper-wrapper-->
+            </div>
+            <!--/swiper-container-->
+
+            <div class="slider-sertificate__btn-prev swiper-button-prev"></div>
+            <div class="slider-sertificate__btn-next swiper-button-next"></div>
+
+          </div>
+          <!--/slider-sertificate-->
+        </div>
+        <!--/primary__serificate-->
+
+      </div>
+      <!--/primary__footer-->
+    </div>
+    <!--/container-->
   </section>
 </main>
 
 @@include('block/footer/footer.html')
+@@include('block/modal/modal.html')
 @@include('block/scripts.html')
