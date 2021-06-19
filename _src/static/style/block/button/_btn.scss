@@ -55,14 +55,15 @@
 
 @keyframes slidein {
   0% {
-    left: rem(-40);
+    // left: rem(-40);
+    left: -2.5rem;
   }
 
   10% {
-    left: calc(100% + rem(140));
+    left: calc(100% + 8.75rem);
   }
 
   100% {
-    left: calc(100% + rem(140));
+    left: calc(100% + 8.75rem);
   }
 }

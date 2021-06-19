@@ -264,12 +264,12 @@
         height: rem(3);
 
         background-color: $c-grey-dark;
-        box-shadow: 0 16px 0 0 $c-grey-dark;
+        box-shadow: 0 1rem 0 0 $c-grey-dark;
       }
       &::after {
         content: "";
         position: absolute;
-        top: rem(8);
+        top: .5rem;
         left: 0;
 
         width: rem(24);
